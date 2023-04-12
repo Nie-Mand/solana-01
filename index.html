@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Solana Web3</title>
+  </head>
+  <body>
+    <div>
+      <div class="inset-0 fixed flex">
+        <div class="bg-emerald-500 duration-300" id="green-bar"></div>
+        <div class="bg-pink-500 duration-300" id="red-bar"></div>
+      </div>
+      <div class="text-black fixed inset-0 grid place-content-center">
+        <div class="bg-white p-10 uppercase font-black text-4xl">
+          <h1>Do you think that SOMETHING IS THAT WAY?</h1>
+
+          <div class="flex py-10 justify-center space-x-6 text-white text-lg">
+            <button class="px-5 py-2 bg-emerald-700" id="agree-button" >YES</button>
+            <button class="px-5 py-2 bg-pink-700">NO</button>
+          </div>
+
+          <div class="flex justify-center text-xl space-x-6">
+            <h1 class="text-emerald-400"><span id="nb-agree"></span>% Thinks YES</h1>
+            <h1 class="text-pink-400"><span id="nb-disagree"></span>% Thinks NO</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module">
+      import { Buffer } from "buffer";
+      window.Buffer = Buffer;
+    </script>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
